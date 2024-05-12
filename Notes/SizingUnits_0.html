@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sizing Units</title>
+    <style></style>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: royalblue;
+        height: 300px;
+        width: 300px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 1.5em;
+        text-align: center;
+      }
+
+      @media (max-width: 600px) {
+        .box {
+          background: rgb(0, 2, 6);
+          color: aliceblue;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2 class="box">Media.Query MaxW : 600px</h2>
+  </body>
+</html>
